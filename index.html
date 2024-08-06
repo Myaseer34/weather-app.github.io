@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js" integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <main id="weather-container">
+        <section class="weather-card">
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <div class="weather-info">
+                <p id="location"></p>
+                <p id="temperature"></p>
+            </div>
+        </section>
+
+        <section id="weather-details">
+            <div class="detail-item">
+                <span>Condition:</span>
+                <p id="condition"></p>
+            </div>
+            <div class="detail-item">
+                <span>Feels Like:</span>
+                <p id="feels-like"></p>
+            </div>
+            <div class="detail-item">
+                <span>Humidity:</span>
+                <p id="humidity"></p>
+            </div>
+            <div class="detail-item">
+                <span>Wind Speed:</span>
+                <p id="wind-speed"></p>
+            </div>
+        </section>
+    </main>
+
+    <div class="clouds">
+        <div class="clouds-layer clouds-layer-1"></div>
+        <div class="clouds-layer clouds-layer-2"></div>
+        <div class="clouds-layer clouds-layer-3"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
